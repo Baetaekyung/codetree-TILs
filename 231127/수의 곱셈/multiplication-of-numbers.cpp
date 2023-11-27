@@ -16,7 +16,7 @@ int main() {
     if(c % 2 != 0){
         sum *= c;
     }
-    if(sum == 1){
+    if(a % 2 == 0 && b % 2 == 0 && c % 2 == 0){
         sum = a * b * c;
     }
     cout << sum;
