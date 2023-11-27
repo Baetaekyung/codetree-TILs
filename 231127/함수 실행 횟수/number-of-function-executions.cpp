@@ -17,6 +17,6 @@ int main() {
     int n;
     cin >> n;
     codetree(n);
-    cout << count % 1000000007;
+    cout << count % 7;
     return 0;
 }
