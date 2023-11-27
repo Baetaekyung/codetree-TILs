@@ -1,13 +1,20 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 int main() {
-    vector<int>odd;
-    vector<int>even;
-    int a, b, c;
-    cin >> a >> b >> c;
-    if(a * b * c % 2 != 0){
-        cout << a * b * c;
+    int a, b, c, sum = 1;
+    cin >> a;
+    if(a % 2 != 0){
+        sum *= a;
     }
-    return 0;
+    cin >> b;
+    if(b % 2 != 0){
+        sum *= b;
+    }
+    cin >> c;
+    if(c % 2 != 0){
+        sum *= c;
+    }
+    cout << sum;
 }
