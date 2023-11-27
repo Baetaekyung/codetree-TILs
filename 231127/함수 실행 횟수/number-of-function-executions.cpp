@@ -2,7 +2,7 @@
 
 using namespace std;
 
-static int count = 0;
+static long long count = 0;
 int codetree(int n){
     count++;
     if(n < 2){
@@ -17,6 +17,6 @@ int main() {
     int n;
     cin >> n;
     codetree(n);
-    cout << count % 7;
+    cout << count % 1000000007;
     return 0;
 }
